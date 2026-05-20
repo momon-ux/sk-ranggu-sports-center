@@ -176,3 +176,8 @@ table{
 }
 
 }
+@media (max-width:768px){
+    .dashboard{
+        display:none;
+    }
+}
