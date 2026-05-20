@@ -184,3 +184,54 @@ table{
 .sidebar.active{
     left:0;
 }
+.sidebar{
+    position:fixed;
+    top:0;
+    left:-250px;
+    width:220px;
+    height:100%;
+    background:white;
+    padding-top:70px;
+    box-shadow:2px 0 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+    z-index:999;
+}
+
+.sidebar.active{
+    left:0;
+}
+
+.sidebar button{
+    display:block;
+    width:90%;
+    margin:10px auto;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#f5f7fb;
+    font-weight:bold;
+    cursor:pointer;
+    text-align:left;
+}
+
+.sidebar button:hover{
+    background:#0b3d91;
+    color:white;
+}
+
+.menu-toggle{
+    position:fixed;
+    top:15px;
+    left:15px;
+    background:#0b3d91;
+    color:white;
+    width:45px;
+    height:45px;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    cursor:pointer;
+    z-index:1000;
+}
