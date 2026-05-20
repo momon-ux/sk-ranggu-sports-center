@@ -97,3 +97,33 @@ footer{
 #content{
     min-height:120px;
 }
+@media (max-width: 768px){
+
+.hero{
+    padding: 20px;
+}
+
+.hero h1{
+    font-size: 42px;
+    line-height: 1.1;
+}
+
+.hero p{
+    font-size: 16px;
+}
+
+.logo-row{
+    flex-direction: column;
+    gap: 10px;
+}
+
+.logo-row img{
+    width: 80px;
+    height: 80px;
+}
+
+.dashboard{
+    grid-template-columns: 1fr;
+}
+
+}
