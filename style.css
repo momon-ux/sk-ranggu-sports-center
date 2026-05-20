@@ -100,31 +100,47 @@ footer{
 @media (max-width: 768px){
 
 .hero{
-    padding: 20px;
-}
-.hero h1{
-    font-size: 32px;
-    line-height: 1.1;
-}
-
-.hero p{
-    font-size: 16px;
+    padding: 18px;
 }
 
 .logo-row{
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:20px;
+    gap:12px;
+    flex-wrap:nowrap;
 }
 
 .logo-row img{
-    width: 80px;
-    height: 80px;
+    width:60px;
+    height:60px;
+}
+
+.hero h1{
+    font-size:26px;
+    line-height:1.1;
+    margin:10px 0;
+}
+
+.hero p{
+    font-size:14px;
+    line-height:1.4;
+}
+
+.hero .alamat{
+    font-size:13px;
+    color:#666;
+    margin-top:8px;
+}
+
+.hero .tarikh{
+    font-size:12px;
+    color:#888;
+    margin-top:5px;
 }
 
 .dashboard{
-    grid-template-columns: 1fr;
+    grid-template-columns:1fr;
 }
 
 }
