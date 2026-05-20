@@ -20,9 +20,8 @@ const SHEET_URL = "https://opensheet.elk.sh/1hUhXavyR4SWQMsLcZGv6NaOm3ammv0ypTnk
             <tr style="background:#0b3d91; color:white;">
               <th style="padding:10px; border:1px solid #ccc;">Nama Guru</th>
               <th style="border:1px solid #ccc;">Jawatan</th>
-              <th style="border:1px solid #ccc;">Rumah Sukan</th>
               <th style="border:1px solid #ccc;">Unit</th>
-<th style="border:1px solid #ccc;">Borang</th>
+<th style="border:1px solid #ccc;">Maklumat Profil</th>
 <th style="border:1px solid #ccc;">Pencapaian</th>
             </tr>
         `;
@@ -41,17 +40,13 @@ ${guru["Jawatan"] || ""}
 </td>
 
 <td style="border:1px solid #ccc; padding:10px;">
-${guru["Rumah Sukan"] || ""}
-</td>
-
-<td style="border:1px solid #ccc; padding:10px;">
 ${guru["Unit"] || ""}
 </td>
 
 <td style="border:1px solid #ccc; padding:10px;">
 <a href="${guru["Link Borang Maklumat Guru"] || '#'}"
 target="_blank">
-📄 Borang
+👤 Profil
 </a>
 </td>
 
