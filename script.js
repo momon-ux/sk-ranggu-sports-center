@@ -23,7 +23,6 @@ const SHEET_URL = "https://opensheet.elk.sh/1hUhXavyR4SWQMsLcZGv6NaOm3ammv0ypTnk
               <th style="border:1px solid #ccc;">Unit</th>
 <th style="border:1px solid #ccc;">Borang</th>
 <th style="border:1px solid #ccc;">Pencapaian</th>
-              <th style="border:1px solid #ccc;">Unit</th>
             </tr>
         `;
 
