@@ -151,3 +151,7 @@ today.getFullYear();
 
 document.getElementById("tarikhHari").innerText =
 "Paparan: " + tarikhText;
+function toggleMenu(){
+    document.getElementById("sidebar")
+    .classList.toggle("active");
+}
