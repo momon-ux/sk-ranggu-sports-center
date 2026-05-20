@@ -91,3 +91,38 @@ const SHEET_URL = "https://opensheet.elk.sh/1hUhXavyR4SWQMsLcZGv6NaOm3ammv0ypTnk
   }
 
 }
+const hari = [
+"Ahad",
+"Isnin",
+"Selasa",
+"Rabu",
+"Khamis",
+"Jumaat",
+"Sabtu"
+];
+
+const bulan = [
+"Januari",
+"Februari",
+"Mac",
+"April",
+"Mei",
+"Jun",
+"Julai",
+"Ogos",
+"September",
+"Oktober",
+"November",
+"Disember"
+];
+
+const today = new Date();
+
+const tarikhText =
+hari[today.getDay()] + ", " +
+today.getDate() + " " +
+bulan[today.getMonth()] + " " +
+today.getFullYear();
+
+document.getElementById("tarikhHari").innerText =
+"Paparan: " + tarikhText;
