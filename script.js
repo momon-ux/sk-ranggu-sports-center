@@ -21,19 +21,49 @@ const SHEET_URL = "https://opensheet.elk.sh/1hUhXavyR4SWQMsLcZGv6NaOm3ammv0ypTnk
               <th style="border:1px solid #ccc;">Jawatan</th>
               <th style="border:1px solid #ccc;">Rumah Sukan</th>
               <th style="border:1px solid #ccc;">Unit</th>
+<th style="border:1px solid #ccc;">Borang</th>
+<th style="border:1px solid #ccc;">Pencapaian</th>
+              <th style="border:1px solid #ccc;">Unit</th>
             </tr>
         `;
 
         data.forEach(guru => {
 
-          html += `
-            <tr>
-              <td style="padding:10px; border:1px solid #ccc;">${guru["Nama Guru"] || ""}</td>
-              <td style="border:1px solid #ccc;">${guru["Jawatan"] || ""}</td>
-              <td style="border:1px solid #ccc;">${guru["Rumah Sukan"] || ""}</td>
-              <td style="border:1px solid #ccc;">${guru["Unit"] || ""}</td>
-            </tr>
-          `;
+html += `
+<tr>
+
+<td style="padding:10px; border:1px solid #ccc;">
+${guru["Nama Guru"] || ""}
+</td>
+
+<td style="border:1px solid #ccc; padding:10px;">
+${guru["Jawatan"] || ""}
+</td>
+
+<td style="border:1px solid #ccc; padding:10px;">
+${guru["Rumah Sukan"] || ""}
+</td>
+
+<td style="border:1px solid #ccc; padding:10px;">
+${guru["Unit"] || ""}
+</td>
+
+<td style="border:1px solid #ccc; padding:10px;">
+<a href="${guru["Link Borang Maklumat Guru"] || '#'}"
+target="_blank">
+📄 Borang
+</a>
+</td>
+
+<td style="border:1px solid #ccc; padding:10px;">
+<a href="${guru["Link Google Form Pencapaian"] || '#'}"
+target="_blank">
+🏆 Pencapaian
+</a>
+</td>
+
+</tr>
+`;
 
         });
 
