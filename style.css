@@ -102,9 +102,8 @@ footer{
 .hero{
     padding: 20px;
 }
-
 .hero h1{
-    font-size: 42px;
+    font-size: 32px;
     line-height: 1.1;
 }
 
@@ -113,8 +112,10 @@ footer{
 }
 
 .logo-row{
-    flex-direction: column;
-    gap: 10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
 }
 
 .logo-row img{
