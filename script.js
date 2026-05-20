@@ -13,8 +13,9 @@ const SHEET_URL = "https://opensheet.elk.sh/1hUhXavyR4SWQMsLcZGv6NaOm3ammv0ypTnk
 
         let html = `
           <h2>👨‍🏫 Profil Guru</h2>
+<div class="table-container">
 
-          <table style="width:100%; border-collapse:collapse; margin-top:20px;">
+<table style="width:100%; border-collapse:collapse; margin-top:20px;">
 
             <tr style="background:#0b3d91; color:white;">
               <th style="padding:10px; border:1px solid #ccc;">Nama Guru</th>
@@ -66,7 +67,7 @@ target="_blank">
 
         });
 
-        html += `</table>`;
+html += `</table></div>`;
 
         content.innerHTML = html;
 
